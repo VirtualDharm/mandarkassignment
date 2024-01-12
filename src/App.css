@@ -1,38 +1,78 @@
-.App {
+/* Reset some default styling */
+body, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+a{
+  text-decoration: none;
+}
+
+/* Header Styles */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  margin: 0 150px;
+  border-bottom: 1px solid #ddd;
+}
+
+header a{
+  color: black;
+}
+
+.nav-links{
+  display: flex;
+  gap: 30px 
+}
+.header-buttons{
+  display: flex;
+  gap: 10px;
+}
+
+/* Component Styles */
+.component {
+  padding: 20px;
+  border: 1px solid #ccc;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.component > *{
+  margin: 10px;
+  padding: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.section > *{
+  padding: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.sub-grow-bussiness{
+  display: flex;
+  flex-wrap: wrap; 
+}
+
+.section {
+  flex: 1; /* Distribute available space equally among the sections */
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.header-buttons button:first-child {
+  background-color: white;
+  border: none;
+  padding: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.custom-button {
+  border: none;
+}
+
+.custom-button1 {
+  background-color: white;
 }
